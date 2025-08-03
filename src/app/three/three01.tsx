@@ -1,4 +1,4 @@
-import { Cone, MeshTransmissionMaterial, OrbitControls, Sky, Sphere, Torus } from '@react-three/drei'
+import { Cone, Environment, MeshTransmissionMaterial, OrbitControls, Sky, Sphere, Torus } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import React from 'react'
 
@@ -39,7 +39,8 @@ const Three01 = () => {
                 {/* 실시간 하늘과 태양 위치 반영하는 배경 */}
                <Sky sunPosition={[100,20,100]}/>
 
-               
+               {/* 주변 환경 설정 */}
+               <Environment preset='studio' />
 
         </Canvas>
 
